@@ -41,7 +41,7 @@ $kepala = "<!DOCTYPE html>
                     </div>
                     <div class=\"hero-unit\">
                         <h1>Selamat datang di Filavest</h1>
-                        <p>Filavest adalah sebuah platform investasi berbasis kedermawanan yang bertujuan untuk memajukan UKM dengan misi sosial di Indonesia berbasiskan pendanaan <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Crowdfunding adalah metode pendanaan yang sangat masif dan melibatkan keikutsertaan berbagai lapisan masyarakat\" style=\"text-decoration: none; color:#000; font-weight:strong;\">crowdfunding</a> dimana masyarakat dapat berpartisipasi dan ikut serta dalam memajukan UKM Indonesia</p>
+                        <p>Filavest adalah sebuah platform investasi berbasis kedermawanan yang bertujuan untuk memajukan UKM dengan misi sosial di Indonesia berbasiskan pendanaan <a data-toggle=\"tooltip\" data-placement=\"top\" title=\"Crowdfunding adalah metode pendanaan yang sangat masif dan melibatkan keikutsertaan berbagai lapisan masyarakat\" style=\"text-decoration: none; color:#4198f5; font-weight:strong;\" disabled>crowdfunding</a> dimana masyarakat dapat berpartisipasi dan ikut serta dalam memajukan UKM Indonesia</p>
                         <p>
                             <a class=\"btn btn-primary btn-large\" href=\"#\">
                                 Pelajari selengkapnya
