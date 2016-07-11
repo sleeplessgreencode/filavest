@@ -1,5 +1,29 @@
 @import 'https://fonts.googleapis.com/css?family=Abel|Roboto+Condensed';
+
+/* override default font pada bootstrap */
 body{
     font-family: 'Roboto Condensed', sans-serif;
     /*font-family: 'Abel', sans-serif;*/
+}
+
+/* override padding pada body di bootstrap dan menghilangkan padding right & left */
+/* karena kita menggunakan navbar-fixed-top maka override ini dibatalkan */
+/*@media (max-width:979px){
+    body{
+        padding-right:0px;
+        padding-left:0px;
+    }
+}*/
+
+.hero-unit{
+    margin-bottom: 20px;
+}
+
+.tooltip-inner{
+    font-size: 13px;
+}
+
+[class*="span"]{
+    background-color: #e8e8e8;
+    border-radius: 4px;
 }

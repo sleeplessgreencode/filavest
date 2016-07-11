@@ -12,7 +12,7 @@ $kepala = "<!DOCTYPE html>
                     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/mod.css\">
                 </head>
                 <body>
-                    <div class=\"navbar navbar-inverse\">
+                    <div class=\"navbar navbar-inverse navbar-fixed-top\">
                         <div class=\"navbar-inner\" style=\"border-radius:0px;\">
                             <!-- collapsing button menu -->
                             <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".collapsingNav\">
@@ -21,9 +21,9 @@ $kepala = "<!DOCTYPE html>
                                 <span class=\"icon-bar\"></span>
                             </a>
                             
-                            <a class=\"brand\" href=\"http://www.filavest.com\">Filavest</a>
+                            <a class=\"brand\" href=\"http://www.filavest.com\" style=\"margin-left: 0px;\">Filavest</a>
                             
-                            <!-- hidden under 940px -->
+                            <!-- collapse under 940px -->
                             <div class=\"nav-collapse collapse collapsingNav\">
                                 <ul class=\"nav\">
                                     <li class=\"active\"><a href=\"#\">Berita</a></li>
@@ -37,6 +37,30 @@ $kepala = "<!DOCTYPE html>
                                     <li><a href=\"#\"><i class=\"icon-user icon-white\"></i> Masuk</a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class=\"hero-unit\">
+                        <h1>Selamat datang di Filavest</h1>
+                        <p>Filavest adalah sebuah platform investasi berbasis kedermawanan yang bertujuan untuk memajukan UKM dengan misi sosial di Indonesia berbasiskan pendanaan <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Crowdfunding adalah metode pendanaan yang sangat masif dan melibatkan keikutsertaan berbagai lapisan masyarakat\" style=\"text-decoration: none; color:#000; font-weight:strong;\">crowdfunding</a> dimana masyarakat dapat berpartisipasi dan ikut serta dalam memajukan UKM Indonesia</p>
+                        <p>
+                            <a class=\"btn btn-primary btn-large\" href=\"#\">
+                                Pelajari selengkapnya
+                            </a>
+                        </p>
+                    </div>
+                    <div class=\"container-fluid\">
+                        <div class=\"row-fluid\">
+                            <div class=\"span8\">
+                            <p>Bagian ini akan diisi dengan artikel dan konten</p>
+                            </div>
+                            <div class=\"span4\">
+                            <p>Bagian ini akan diisi dengan... (belum tau gw!!)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"navbar navbar-inverse navbar-fixed-bottom\">
+                        <div class=\"navbar-inner\">
+                            <p class=\"navbar-text\" style=\"text-align: center;\">Copyright 2016. Design by <a href=\"https://id.linkedin.com/in/johanespao\">jPao</a></p>
                         </div>
                     </div>";
 
@@ -55,5 +79,11 @@ $kaki =        "<!-- Script jquery dan bootstrap -->
                 <script src=\"js/bootstrap-carousel.js\"></script>
                 <script src=\"js/bootstrap-typeahead.js\"></script>
                 <script src=\"js/bootstrap-affix.js\"></script>
+                <!-- Inisiasi javascript -->
+                <script>
+                    $(document).ready(function(){
+                        $('[data-toggle=\"tooltip\"]').tooltip();
+                    });
+                </script>
               </body>
           </html>";
