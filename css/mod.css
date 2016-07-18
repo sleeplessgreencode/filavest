@@ -27,3 +27,62 @@ body{
     background-color: #e8e8e8;
     border-radius: 4px;
 }
+
+.navbar-inner{
+    background-image: linear-gradient(to bottom,#009688, #009688);
+}
+
+.navbar .brand{
+    color:#fff;
+    text-shadow: none;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
+    background-color: #00695C;    
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
+    color: #fff;
+}
+
+.navbar .nav>li>a{
+    color: #fff;
+    text-shadow: none;
+}
+
+.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{
+    font-weight: normal;
+}
+
+.navbar .btn-navbar{
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+    background-image: linear-gradient(to bottom, #00695C, #00695C);
+    background-color: #00695C;
+    
+}
+
+i.material-icons{
+    float: left;
+    font-size:18px;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+a.btn.btn-navbar{
+    padding: 7px;
+    line-height: 0px;
+    margin-bottom: 5px;
+}
+
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled]{
+   background-color: #00695C; 
+}
+
+p.navbar-text{
+    color:#ffffff;
+}
+
+p.navbar-text a{
+    text-decoration: none;
+    color:#414142;
+}

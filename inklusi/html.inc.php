@@ -8,17 +8,16 @@ $kepala = "<!DOCTYPE html>
                     <!-- Bootstrap -->
                     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap.min.css\">
                     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap-responsive.min.css\">
-                    <!-- CSS mod untuk override value CSS Bootstrap -->
+                    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">
+                    <!-- CSS mod untuk override value CSS Bootstrap & Any CSS loaded before this -->
                     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/mod.css\">
                 </head>
                 <body>
-                    <div class=\"navbar navbar-inverse navbar-fixed-top\">
+                    <div class=\"navbar navbar-fixed-top\">
                         <div class=\"navbar-inner\" style=\"border-radius:0px;\">
                             <!-- collapsing button menu -->
                             <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".collapsingNav\">
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
+                                <span><i class=\"material-icons\">dehaze</i></span>
                             </a>
                             
                             <a class=\"brand\" href=\"http://www.filavest.com\" style=\"margin-left: 0px;\">Filavest</a>
@@ -33,8 +32,8 @@ $kepala = "<!DOCTYPE html>
                                     <li><a href=\"#\">Tentang Kami</a></li>
                                 </ul>
                                 <ul class=\"nav navbar-nav pull-right\">
-                                    <li><a href=\"#\"><i class=\"icon-edit icon-white\"></i> Daftar</a></li>
-                                    <li><a href=\"#\"><i class=\"icon-user icon-white\"></i> Masuk</a></li>
+                                    <li><a href=\"#\"><i class=\"material-icons md-light\">vpn_key</i> Daftar</a></li>
+                                    <li><a href=\"#\"><i class=\"material-icons md-light\">face</i> Masuk</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,7 +57,7 @@ $kepala = "<!DOCTYPE html>
                             </div>
                         </div>
                     </div>
-                    <div class=\"navbar navbar-inverse navbar-fixed-bottom\">
+                    <div class=\"navbar navbar-fixed-bottom\">
                         <div class=\"navbar-inner\">
                             <p class=\"navbar-text\" style=\"text-align: center;\">Copyright 2016. Design by <a href=\"https://id.linkedin.com/in/johanespao\">jPao</a></p>
                         </div>
