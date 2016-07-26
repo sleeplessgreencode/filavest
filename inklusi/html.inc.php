@@ -37,33 +37,13 @@ $kepala = "<!DOCTYPE html>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class=\"hero-unit\">
-                        <h1>Selamat datang di Filavest</h1>
-                        <p>Filavest adalah sebuah platform investasi berbasis kedermawanan yang bertujuan untuk memajukan UKM dengan misi sosial di Indonesia berbasiskan pendanaan <a data-toggle=\"tooltip\" data-placement=\"top\" title=\"Crowdfunding adalah metode pendanaan yang sangat masif dan melibatkan keikutsertaan berbagai lapisan masyarakat\" style=\"text-decoration: none; color:#4198f5; font-weight:strong;\" disabled>crowdfunding</a> dimana masyarakat dapat berpartisipasi dan ikut serta dalam memajukan UKM Indonesia</p>
-                        <p>
-                            <a class=\"btn btn-primary btn-large\" href=\"#\">
-                                Pelajari selengkapnya
-                            </a>
-                        </p>
-                    </div>
-                    <div class=\"container-fluid\">
-                        <div class=\"row-fluid\">
-                            <div class=\"span8\">
-                            <p>Bagian ini akan diisi dengan artikel dan konten</p>
-                            </div>
-                            <div class=\"span4\">
-                            <p>Bagian ini akan diisi dengan... (belum tau gw!!)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"navbar navbar-fixed-bottom\">
-                        <div class=\"navbar-inner\">
-                            <p class=\"navbar-text\" style=\"text-align: center;\">Copyright 2016. Design by <a href=\"https://id.linkedin.com/in/johanespao\">jPao</a></p>
-                        </div>
                     </div>";
 
-$kaki =        "<!-- Script jquery dan bootstrap -->
+$kaki =         "<div class=\"container-fluid blok-kaki\">
+                    This site and all of its layout (including but not limited to) were designed and built with all the love in the world by jPao with the help of no one.....</br></br> *cough*bootstrap*cough*</br></br>
+                    Licensed to Filavest. Copyright 2016.
+                </div>
+                <!-- Script jquery dan bootstrap -->
                 <script src=\"js/jquery.js\"></script>
                 <script src=\"js/bootstrap-transition.js\"></script>
                 <script src=\"js/bootstrap-alert.js\"></script>
