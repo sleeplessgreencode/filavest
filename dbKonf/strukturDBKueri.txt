@@ -1,0 +1,11 @@
+-- ------- Tabel Anggota ----------------------------------------------
+DROP TABLE IF EXISTS `anggota`;
+CREATE TABLE IF NOT EXISTS `anggota` (
+  `id_anggota` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(12) COLLATE utf8_bin NOT NULL,
+  `password` binary(60) NOT NULL,
+  `nama_depan` char(30) COLLATE utf8_bin NOT NULL,
+  `nama_belakang` char(30) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id_anggota`),
+  KEY `username` (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
