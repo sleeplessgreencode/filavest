@@ -1,9 +1,12 @@
 <?php
+// import file konfigurasi dasar
+include_once("konfigurasi/konfigurasi.ink.php");
+// import file fungsiPHP
+include_once("fungsi/fungDB.ink.php");
 // import struktur kepala dan kaki html
 include_once("inklusi/html.inc.php");
 
 echo $kepala;
-
 /*------------------------------ Konten -------------------------------*/
 ?>
 <div class="container-fluid blok-utama">
@@ -38,7 +41,6 @@ echo $kepala;
                     </div>-->
 <?php
 /*---------------------------------------------------------------------*/
-
 // Google Analytics Script
 include_once("inklusi/googleAnalyticsScript.inc.php");
 echo $kaki;
