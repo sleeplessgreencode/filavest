@@ -13,7 +13,7 @@ $kepala = "<!DOCTYPE html>
                     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/mod.css\">
                 </head>
                 <body>
-                    <div class=\"navbar navbar-default navbar-fixed-top\">
+                    <nav class=\"navbar navbar-default navbar-fixed-top\">
                         <div class=\"container-fluid navigasi\">
                         <div class=\"navbar-header\">
                             <!-- collapsing button menu -->
@@ -38,7 +38,7 @@ $kepala = "<!DOCTYPE html>
                                 </ul>
                             </div>
                         </div>
-                    </div>";
+                    </nav>";
 
 $kaki =         "<div class=\"container-fluid blok-kaki\">
                     This site and all of its layout (including but not limited to) were designed and built with all the love in the world by jPao with the help of no one.....</br></br> *cough*bootstrap*cough*</br></br>
@@ -47,20 +47,6 @@ $kaki =         "<div class=\"container-fluid blok-kaki\">
                 <!-- Script jquery dan bootstrap -->
                 <script src=\"js/jquery.js\"></script>
                 <script src=\"js/bootstrap.min.js\"></script>
-                <script src=\"js/bootstrap.js\"></script>
-                <script src=\"js/bootstrap-transition.js\"></script>
-                <script src=\"js/bootstrap-alert.js\"></script>
-                <script src=\"js/bootstrap-modal.js\"></script>
-                <script src=\"js/bootstrap-dropdown.js\"></script>
-                <script src=\"js/bootstrap-scrollspy.js\"></script>
-                <script src=\"js/bootstrap-tab.js\"></script>
-                <script src=\"js/bootstrap-tooltip.js\"></script>
-                <script src=\"js/bootstrap-popover.js\"></script>
-                <script src=\"js/bootstrap-button.js\"></script>
-                <script src=\"js/bootstrap-collapse.js\"></script>
-                <script src=\"js/bootstrap-carousel.js\"></script>
-                <script src=\"js/bootstrap-typeahead.js\"></script>
-                <script src=\"js/bootstrap-affix.js\"></script>
                 <!-- Inisiasi javascript -->
                 <script>
                     $(document).ready(function(){
@@ -109,6 +95,18 @@ $halamanDaftar = "<div class=\"container-fluid blok-utama\">
                                 <label class=\"col-sm-2 control-label\">Nama Pengguna:</label>
                                 <div class=\"col-sm-10\">
                                     <input type=\"text\" class=\"form-control\" id=\"namaPengguna\" name=\"namaPengguna\" placeholder=\"(4 - 12 karakter) Digunakan untuk login\">
+                                </div>
+                            </div>
+                            <div class=\"form-group\">
+                                <label class=\"col-sm-2 control-label\">Email:</label>
+                                <div class=\"col-sm-10\">
+                                    <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Email anda\">
+                                </div>
+                            </div>
+                            <div class=\"form-group\">
+                                <label class=\"col-sm-2 control-label\">Konfirmasi Email:</label>
+                                <div class=\"col-sm-10\">
+                                    <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Tulis ulang email anda\">
                                 </div>
                             </div>
                             <div class=\"form-group\">
