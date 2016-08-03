@@ -21,20 +21,25 @@ if(array_key_exists('modeHalaman', $_GET)) {
 
 switch($tampilanHalaman) {
     case 'daftar':
-        $namaDepan = $namaBelakang = $namaPengguna = $kataKunci = $konfirmasiKataKunci = "";
+        echo $halamanDaftar;
+        break;
+    case 'validasiDaftar':
+        $namaDepan = $namaBelakang = $namaPengguna = $email =  $kataKunci = $konfirmasiKataKunci = "";
         if($_SERVER["REQUEST_METHOD"] == "POST") {
             $namaDepan = pembersihFormulir($_POST["namaDepan"]);
             $namaBelakang = pembersihFormulir($_POST["namaBelakang"]);
             $namaPengguna = pembersihFormulir($_POST["namaPengguna"]);
+            $email = pembersihFormulir($_POST["email"]);
             $kataKunci = pembersihFormulir($_POST["kataKunci"]);
             $konfirmasiKataKunci = pembersihFormulir($_POST["konfirmasiKataKunci"]);
         }
+        
         echo $namaDepan;
         echo $namaBelakang;
         echo $namaPengguna;
+        echo $email;
         echo $kataKunci;
         echo $konfirmasiKataKunci;
-        echo $halamanDaftar;
         break;
     default:
         echo $halamanMuka;

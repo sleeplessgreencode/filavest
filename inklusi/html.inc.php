@@ -41,11 +41,12 @@ $kepala = "<!DOCTYPE html>
                     </nav>";
 
 $kaki =         "<div class=\"container-fluid blok-kaki\">
-                    This site and all of its layout (including but not limited to) were designed and built with all the love in the world by jPao with the help of no one.....</br></br> *cough*bootstrap*cough*</br></br>
-                    Licensed to Filavest. Copyright 2016.
+                    <center><i class=\"material-icons kaki\">copyright</i>2016 Filavest </br>Made with <i class=\"material-icons kaki merah\">favorite</i> by <a href=\"https://id.linkedin.com/in/johanespao\" style=\"color: #FFFFFF; font-weight=\"bold\">johanesPao</a></center>
                 </div>
                 <!-- Script jquery dan bootstrap -->
                 <script src=\"js/jquery.js\"></script>
+                <script src=\"js/jquery.validate.min.js\"></script>
+                <script src=\"js/pendaftaran.js\"></script>
                 <script src=\"js/bootstrap.min.js\"></script>
                 <!-- Inisiasi javascript -->
                 <script>
@@ -78,51 +79,63 @@ $halamanMuka = "<div class=\"container-fluid blok-utama\">
             </div>";
 $halamanDaftar = "<div class=\"container-fluid blok-utama\">
                     <h1>Daftarkan diri anda</h1>
-                        <form class=\"form-horizontal\" method=\"post\" action=\"index.php?modeHalaman=daftar\">
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Nama Depan:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"text\" class=\"form-control\" id=\"namaDepan\" name=\"namaDepan\" placeholder=\"Nama depan anda\">
+                        <form class=\"form-horizontal\" method=\"post\" action=\"index.php?modeHalaman=validasiDaftar\" role=\"form\" id=\"formulirPendaftaran\">
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">looks_one account_box</i></span>
+                                    </div>
+                                    <input type=\"text\" class=\"form-control\" id=\"namaDepan\" name=\"namaDepan\" placeholder=\"Nama Depan\">
                                 </div>
+                                <span class=\"help-block\" id=\"error\"></span>
+                            </div>
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">looks_two account_box</i></span>
+                                    </div>
+                                    <input type=\"text\" class=\"form-control\" id=\"namaBelakang\" name=\"namaBelakang\" placeholder=\"Nama Belakang\">
+                                </div>
+                                <span class=\"help-block\" id=\"error\"></span>
+                            </div>
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">face</i></span>
+                                    </div>
+                                    <input type=\"text\" class=\"form-control\" id=\"namaPengguna\" name=\"namaPengguna\" placeholder=\"Nama Pengguna (4 - 12 karakter)\">
+                                </div>
+                                <span class=\"help-block\" id=\"error\"></span>
+                            </div>
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">email</i></span>
+                                    </div>
+                                    <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Email\">
+                                </div>
+                                <span class=\"help-block\" id=\"error\"></span>
+                            </div>
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">lock</i></span>
+                                    </div>
+                                    <input type=\"password\" class=\"form-control\" id=\"kataKunci\" name=\"kataKunci\" placeholder=\"Kata Kunci (minimum 6 karakter)\">
+                                </div>
+                                <span class=\"help-block\" id=\"error\"></span>
+                            </div>
+                            <div class=\"form-group col-lg-10\">
+                                <div class=\"input-group\">
+                                    <div class=\"input-group-addon\">
+                                        <span><i class=\"material-icons\">cached lock</i></span>
+                                    </div>
+                                    <input type=\"password\" class=\"form-control\" id=\"konfirmasiKataKunci\" name=\"konfirmasiKataKunci\" placeholder=\"Tulis Ulang Kata Kunci\">
+                                </div>
+                                <span class=\"help-block\" id=\"error\"></span>
                             </div>
                             <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Nama Belakang:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"text\" class=\"form-control\" id=\"namaBelakang\" name=\"namaBelakang\" placeholder=\"Nama belakang anda\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Nama Pengguna:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"text\" class=\"form-control\" id=\"namaPengguna\" name=\"namaPengguna\" placeholder=\"(4 - 12 karakter) Digunakan untuk login\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Email:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Email anda\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Konfirmasi Email:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Tulis ulang email anda\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Kata Kunci:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"password\" class=\"form-control\" id=\"kataKunci\" name=\"kataKunci\" placeholder=\"Kata kunci untuk login\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label class=\"col-sm-2 control-label\">Konfirmasi Kata Kunci:</label>
-                                <div class=\"col-sm-10\">
-                                    <input type=\"password\" class=\"form-control\" id=\"konfirmasiKataKunci\" name=\"konfirmasiKataKunci\"  placeholder=\"Tulis ulang kata kunci anda\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <div class=\"col-sm-offset-2 col-sm-10\">
+                                <div class=\"col-lg-10\">
                                     <button type=\"submit\" class=\"btn btn-primary\">Daftar</button>
                                 </div>
                             </div>
