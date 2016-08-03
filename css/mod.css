@@ -127,8 +127,8 @@ h1{
 
 @media (max-width: 979px){
     .container-fluid.navigasi{
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     
     .container-fluid.blok-utama, .container-fluid.blok1, .container-fluid.blok2, .container-fluid.blok3, .container-fluid.blok4, .container-fluid.blok-kaki{
@@ -138,8 +138,8 @@ h1{
 
 @media (max-width: 767px){
     .container-fluid.navigasi{
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -153,6 +153,14 @@ h1{
 
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
     color: #64ffda;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus{
+    background-color: transparent;
 }
 
 .navbar .nav>li>a{
@@ -220,6 +228,10 @@ p.navbar-text a{
 
 .material-icons.kaki.merah{
     color:#E53935
+}
+
+.material-icons.hijau{
+    color:#64ffda;
 }
 
 /*.col-sm-2.control-label{

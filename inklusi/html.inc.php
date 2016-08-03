@@ -18,7 +18,7 @@ $kepala = "<!DOCTYPE html>
                         <div class=\"navbar-header\">
                             <!-- collapsing button menu -->
                             <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#collapsingNav\" aria-expanded=\"false\">
-                                <span><i class=\"material-icons\">dehaze</i></span>
+                                <span><i class=\"material-icons hijau\">dehaze</i></span>
                             </button>
                             
                             <a class=\"navbar-brand\" href=\"index.php\" style=\"margin-left: 0px;\">Filavest</a>
